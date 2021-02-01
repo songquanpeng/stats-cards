@@ -3,7 +3,7 @@ const http = require('http');
 const app = express();
 const zhihu = require('./api/zhihu');
 
-app.use('/zhihu', zhihu);
+app.use('/api/zhihu', zhihu);
 
 const server = http.createServer(app);
 
