@@ -25,8 +25,8 @@ function renderZhihuCard(data) {
   <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_4" y="94.65" x="67.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">关注者数量：${follower_count}</text>
   <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_5" y="135" x="68" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">得到的赞同：${voteup_count}</text>
   <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_6" y="175" x="68" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">得到的喜欢：${thanked_count}</text>
-  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_9" y="94.65" x="259.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">问题数量：${answer_count}</text>
-  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_10" y="135" x="260" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">回答数量：${question_count}</text>
+  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_9" y="94.65" x="259.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">问题数量：${question_count}</text>
+  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_10" y="135" x="260" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">回答数量：${answer_count}</text>
   <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="18" id="svg_11" y="175" x="260" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">文章数量：${articles_count}</text>
  </g>
 </svg>`;
