@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
+    "test": "node ./test.js",
     "devStart": "nodemon ./app.js"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/songquanpeng/readme-stats#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
