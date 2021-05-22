@@ -5,6 +5,7 @@
 支持以下网站：
 - [x] 知乎
 - [x] B 站
+- [ ] LeetCode
 - [ ] Steam
 - [ ] V2ex
 
