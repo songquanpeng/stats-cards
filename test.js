@@ -1,7 +1,7 @@
-const getBilibiliInfo = require('./crawer/bilibili');
+const getLeetCodeInfo = require('./crawer/leetcode');
 
 async function test() {
-  let info = await getBilibiliInfo(97177641);
+  let info = await getLeetCodeInfo("quanpeng");
   console.log(info);
 }
 
