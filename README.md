@@ -7,7 +7,6 @@
 - [x] B 站
 - [x] LeetCode
 - [ ] Steam
-- [ ] V2ex
 
 ## 演示
 `https://stats.justsong.cn/api/zhihu?username=excited-vczh`
@@ -15,6 +14,9 @@
 
 `https://stats.justsong.cn/api/bilibili/?id=666`
 ![id 为 666 的用户的 B 站数据](https://stats.justsong.cn/api/bilibili/?id=666)
+
+`https://stats.justsong.cn/api/leetcode/?username=quanpeng`
+![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng)
 
 ## 参考
 1. [创意参考](https://github.com/anuraghazra/github-readme-stats)
