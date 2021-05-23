@@ -18,7 +18,7 @@ function renderBilibiliCard(data) {
   <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Card)">
     <rect id="Card-2" data-name="Card" width="364" height="192" rx="8" transform="translate(9 6)" fill="#fff"/>
   </g>
-  <text id="JustSong_s_Bilibili_Stats" data-name="JustSong&apos;s Bilibili Stats" transform="translate(94 44)" fill="#212121" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">JustSong&apos;s Bilibili Stats</tspan></text>
+  <text id="JustSong_s_Bilibili_Stats" data-name="JustSong&apos;s Bilibili Stats" transform="translate(94 44)" fill="#212121" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">${name}&apos;s Bilibili Stats</tspan></text>
   <text id="Followers" transform="translate(55 84)" fill="#9e9e9e" font-size="13.5" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Followers</tspan></text>
   <text id="Video_Views" data-name="Video Views" transform="translate(203 85)" fill="#9e9e9e" font-size="13.5" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Video Views</tspan></text>
   <text id="Upvotes" transform="translate(55 119)" fill="#9e9e9e" font-size="13.5" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Upvotes</tspan></text>
