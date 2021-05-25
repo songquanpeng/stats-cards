@@ -22,7 +22,7 @@ async function getLeetCodeInfo(username) {
           'sec-fetch-site': 'same-origin',
           'sec-fetch-mode': ' cors',
           'sec-fetch-dest': 'empty',
-          'referer': 'https://leetcode.com/quanpeng/'
+          'referer': `https://leetcode.com/${username}/`
         }
       }
     );
