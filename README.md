@@ -7,6 +7,7 @@
 - [x] B 站（部分信息目前未能成功获取）
 - [x] LeetCode
 - [x] LeetCode 中文站
+- [x] 掘金（[By @jiweiyuan](https://github.com/jiweiyuan)）
 - [ ] 牛客
 - [ ] Steam
 
@@ -23,8 +24,12 @@ LeetCode 英文站：`https://stats.justsong.cn/api/leetcode/?username=quanpeng`
 
 ![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng)
 
-LeetCode 中文站：`http://localhost:3000/api/leetcode?username=leetcode&cn=true`
+LeetCode 中文站：`https://stats.justsong.cn/api/leetcode?username=leetcode&cn=true`
 ![力扣数据](https://stats.justsong.cn/api/leetcode?username=leetcode&cn=true)
+
+掘金：`https://stats.justsong.cn/api/juejin?id=1556564194374926`
+
+![掘金数据](https://stats.justsong.cn/api/juejin?id=1556564194374926)
 
 ## 参考
 1. [创意参考](https://github.com/anuraghazra/github-readme-stats)
