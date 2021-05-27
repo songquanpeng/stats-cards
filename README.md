@@ -7,7 +7,7 @@
 - [x] B 站（部分信息目前未能成功获取）
 - [x] LeetCode
 - [x] LeetCode 中文站
-- [x] 掘金（[By @jiweiyuan](https://github.com/jiweiyuan)）
+- [x] 掘金（By [@jiweiyuan](https://github.com/jiweiyuan)）
 - [ ] 牛客
 - [ ] Steam
 
