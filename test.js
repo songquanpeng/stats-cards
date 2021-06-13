@@ -1,7 +1,7 @@
-const getCSDNInfo = require('./crawer/csdn')
+const getNowCoderInfo = require('./crawer/nowcoder')
 
 async function test() {
-  let info = await getCSDNInfo('vczh')
+  let info = await getNowCoderInfo('189102554')
   console.log(info)
 }
 

@@ -9,7 +9,7 @@
 - [x] LeetCode 中文站
 - [x] 掘金（By [@jiweiyuan](https://github.com/jiweiyuan)）
 - [ ] 思否
-- [ ] 牛客
+- [x] 牛客
 - [x] CSDN
 - [ ] Github
 - [ ] Steam
@@ -31,9 +31,14 @@ LeetCode 中文站：`https://stats.justsong.cn/api/leetcode?username=leetcode&c
 ![力扣数据](https://stats.justsong.cn/api/leetcode?username=leetcode&cn=true)
 
 掘金：`https://stats.justsong.cn/api/juejin?id=1556564194374926`
-
 ![掘金数据](https://stats.justsong.cn/api/juejin?id=1556564194374926)
 
-## 参考
+CSDN：`https://stats.justsong.cn/api/csdn?id=vczh`
+![CSDN 数据](https://stats.justsong.cn/api/csdn?id=vczh)
+
+牛客：`https://stats.justsong.cn/api/nowcoder?id=2004383`
+![牛客数据](https://stats.justsong.cn/api/nowcoder?id=2004383)
+
+## 其他
 1. [创意参考](https://github.com/anuraghazra/github-readme-stats)
-2. [SVG 设计工具](https://editor.method.ac/)
+2. 如有爬虫失效，请及时提 issue！

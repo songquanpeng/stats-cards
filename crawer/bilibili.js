@@ -1,6 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const axiosConfig = require('../common/utils').axiosConfig;
+const axiosConfig = require('../common/utils').mobileConfig;
 
 async function getBilibiliInfo(id) {
   let result = {
