@@ -1,12 +1,8 @@
-const getLeetCodeInfo = require('./crawer/leetcode');
-const getJuejinInfo = require('./crawer/juejin')
+const getCSDNInfo = require('./crawer/csdn')
 
 async function test() {
-  let leetCodeInfo = await getLeetCodeInfo("quanpeng");
-  console.log('leetCodeInfo', leetCodeInfo);
-
-  let juejinInfo = await getJuejinInfo('1556564194374926')
-  console.log('juejinInfo', juejinInfo)
+  let info = await getCSDNInfo('vczh')
+  console.log(info)
 }
 
 test();

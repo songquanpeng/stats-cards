@@ -8,7 +8,10 @@
 - [x] LeetCode
 - [x] LeetCode 中文站
 - [x] 掘金（By [@jiweiyuan](https://github.com/jiweiyuan)）
+- [ ] 思否
 - [ ] 牛客
+- [x] CSDN
+- [ ] Github
 - [ ] Steam
 
 ## 演示
