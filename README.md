@@ -13,6 +13,7 @@
 - [x] CSDN
 - [ ] Github
 - [ ] Steam
+- [ ] 网易云音乐
 
 ## 演示
 知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`
