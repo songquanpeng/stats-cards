@@ -1,4 +1,4 @@
-# Readme Stats
+# 网站数据卡片
 ## 描述
 在 README 中展示你在一些流行的网站的数据。
 
@@ -13,6 +13,12 @@
 - [x] CSDN
 - [ ] Github
 - [ ] Steam
+
+支持黑色主题，使用时在 url 后加入 `&theme=dark` 即可，例如：
+`https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark`
+
+![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark)
+
 
 ## 演示
 知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`
