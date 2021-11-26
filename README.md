@@ -13,6 +13,7 @@
 - [x] CSDN
 - [ ] Github
 - [ ] Steam
+- [ ] 网易云音乐
 
 支持黑色主题，使用时在 url 后加入 `&theme=dark` 即可，例如：
 `https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark`
@@ -52,3 +53,4 @@ CSDN：`https://stats.justsong.cn/api/csdn?id=vczh`
 ## 其他
 1. [创意参考](https://github.com/anuraghazra/github-readme-stats)
 2. 如有爬虫失效，请及时提 issue！
+3. 卡片本身带有阴影效果，然而有些博客主题会自动给图片加阴影效果，这样将导致出现双重阴影，解决方法是使用 img 标签和 CSS 来移除博客主题提供的阴影效果，例如：`<img src="https://stats.justsong.cn/api/leetcode?username=username&cn=true" style="box-shadow:none !important">`
