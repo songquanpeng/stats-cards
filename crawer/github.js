@@ -15,11 +15,12 @@ async function getGitHubInfo(username) {
     repos: 0,
     forks: 0,
     watchers: 0,
-    following: 0
+    following: 0,
+    issues: 0,
+    gists: 0
   };
 
   try {
-
     let res = await axios.get(
       `https://api.github.com/users/${username}`,
       config
@@ -29,6 +30,7 @@ async function getGitHubInfo(username) {
     result.followers = userInfo.followers;
     result.following = userInfo.following;
     result.repos = userInfo.public_repos;
+    result.gists = userInfo.public_gists;
     for (let i = 0; i < result.repos / 100; i++) {
       let res = await axios.get(
         `https://api.github.com/users/${username}/repos?per_page=100&page=${i + 1}`
@@ -37,7 +39,8 @@ async function getGitHubInfo(username) {
       repos.forEach(repo => {
         result.stars += repo.stargazers_count;
         result.forks += repo.forks;
-        result.watchers += repo.watchers_count;
+        result.watchers += repo.watchers;
+        result.issues += repo.open_issues;
       });
     }
   } catch (e) {
