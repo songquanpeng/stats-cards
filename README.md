@@ -11,7 +11,7 @@
 - [ ] 思否
 - [x] 牛客
 - [x] CSDN
-- [ ] Github
+- [x] Github
 - [ ] Steam
 - [ ] 网易云音乐
 
@@ -22,6 +22,10 @@
 
 
 ## 演示
+GitHub：`https://stats.justsong.cn/api/github?username=songquanpeng`
+
+![我的 GitHub 数据](https://stats.justsong.cn/api/github?username=songquanpeng)
+
 知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`
 
 ![轮子哥的知乎数据](https://stats.justsong.cn/api/zhihu?username=excited-vczh)
