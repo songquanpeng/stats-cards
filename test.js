@@ -1,7 +1,7 @@
-const getNowCoderInfo = require('./crawer/nowcoder')
+const getNeteaseMusicInfo = require('./crawer/netease-music')
 
 async function test() {
-  let info = await getNowCoderInfo('189102554')
+  let info = await getNeteaseMusicInfo('506085251')
   console.log(info)
 }
 
