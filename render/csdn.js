@@ -8,7 +8,7 @@ function renderCSDNCard(data) {
     constructItem(63, 83, `Articles`, 'label', 13.5),
     constructItem(63, 120, `Fans`, 'label', 13.5),
     constructItem(63, 157, `Likes`, 'label', 13.5),
-    constructItem(220, 83, `Replies`, 'value', 13.5),
+    constructItem(220, 83, `Replies`, 'label', 13.5),
     constructItem(220, 120, `Views`, 'label', 13.5),
     constructItem(220, 157, `Credit`, 'label', 13.5),
     constructItem(134, 83, `${articles}`, 'value', 15),

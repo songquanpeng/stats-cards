@@ -21,7 +21,7 @@ function renderJuejinCard(data) {
     constructItem(55, 84, `Followers`, 'label', 13.5),
     constructItem(203, 85, `Likes`, 'label', 13.5),
     constructItem(55, 119, `Articles`, 'label', 13.5),
-    constructItem(203, 119, `Article Views`, 'value', 13.5),
+    constructItem(203, 119, `Article Views`, 'label', 13.5),
     constructItem(55, 154, `Signature`, 'label', 13.5),
     constructItem(126, 84, `${follower_count}`, 'value', 15),
     constructItem(126, 119, `${article_count}`, 'value', 15),

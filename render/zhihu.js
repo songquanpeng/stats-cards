@@ -18,7 +18,7 @@ function renderZhihuCard(data) {
     constructItem(63, 83, `Followers`, 'label', 13.5),
     constructItem(63, 120, `Upvotes`, 'label', 13.5),
     constructItem(63, 157, `Likes`, 'label', 13.5),
-    constructItem(220, 83, `Questions`, 'value', 13.5),
+    constructItem(220, 83, `Questions`, 'label', 13.5),
     constructItem(220, 120, `Answers`, 'label', 13.5),
     constructItem(220, 157, `Articles`, 'label', 13.5),
     constructItem(134, 83, `${follower_count}`, 'value', 15),
