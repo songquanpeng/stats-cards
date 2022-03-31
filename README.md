@@ -40,11 +40,11 @@ LeetCode 英文站：`https://stats.justsong.cn/api/leetcode/?username=quanpeng`
 
 LeetCode 中文站：`https://stats.justsong.cn/api/leetcode?username=quanpeng&cn=true`
 
-![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng&cn_username=quanpeng)
+![力扣数据](https://stats.justsong.cn/api/leetcode?username=quanpeng&cn=true)
 
 LeetCode 中文站英文站双修：`https://stats.justsong.cn/api/leetcode?username=quanpeng&cn_username=quanpeng`
 
-![力扣数据](https://stats.justsong.cn/api/leetcode?username=leetcode&cn=true)
+![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng&cn_username=quanpeng)
 
 掘金：`https://stats.justsong.cn/api/juejin?id=1556564194374926`
 
