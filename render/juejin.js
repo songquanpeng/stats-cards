@@ -10,11 +10,11 @@ function renderJuejinCard(data) {
     got_view_count, // 文章被阅读
     theme
   } = data;
-  // let lengthLimit = 14;
-  // if (description.length > lengthLimit) {
-  //   description = description.substr(0, lengthLimit);
-  //   description += '...';
-  // }
+  let lengthLimit = 14;
+  if (description.length > lengthLimit) {
+    description = description.substr(0, lengthLimit);
+    description += '...';
+  }
 
   let items = [
     constructItem(94, 44, `${user_name}&apos;s Juejin Stats`, 'title', 18),
