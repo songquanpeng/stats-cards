@@ -26,7 +26,7 @@ GitHub：`https://stats.justsong.cn/api/github?username=songquanpeng`
 
 ![我的 GitHub 数据](https://stats.justsong.cn/api/github?username=songquanpeng)
 
-知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`
+知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`（注意是你的 id，即点开你的知乎主页，URL 中最后一段）
 
 ![轮子哥的知乎数据](https://stats.justsong.cn/api/zhihu?username=excited-vczh)
 
