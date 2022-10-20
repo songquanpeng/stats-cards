@@ -37,6 +37,9 @@ async function getLeetCodeInfo(username) {
     result.acceptance = result.acceptance.toFixed(1);
     result.acceptance = result.acceptance + '%';
     result.star_rating = data.matchedUser.profile.starRating;
+    if (data.matchedUser.profile.realName) {
+      result.name = data.matchedUser.profile.realName;
+    }
   } catch (e) {
     console.error(e);
   }
