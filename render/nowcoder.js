@@ -21,11 +21,11 @@ function renderNowCoderCard(data) {
     constructItem(220, 120, `Questions`, 'label', 13.5),
     constructItem(220, 157, `Coding`, 'label', 13.5),
     constructItem(134, 83, `${fans}`, 'value', 15),
-    constructItem(134, 121, `${likes}`, 'value', 15),
-    constructItem(134, 159, `${score}`, 'value', 15),
-    constructItem(295, 84, `${level}`, 'value', 15),
-    constructItem(295, 121, `${questionAC}`, 'value', 15),
-    constructItem(295, 158, `${codingAC}`, 'value', 15)
+    constructItem(134, 120, `${likes}`, 'value', 15),
+    constructItem(134, 157, `${score}`, 'value', 15),
+    constructItem(295, 83, `${level}`, 'value', 15),
+    constructItem(295, 120, `${questionAC}`, 'value', 15),
+    constructItem(295, 157, `${codingAC}`, 'value', 15)
   ];
   return render(items, theme);
 }

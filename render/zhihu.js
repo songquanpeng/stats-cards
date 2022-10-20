@@ -22,11 +22,11 @@ function renderZhihuCard(data) {
     constructItem(220, 120, `Answers`, 'label', 13.5),
     constructItem(220, 157, `Articles`, 'label', 13.5),
     constructItem(134, 83, `${follower_count}`, 'value', 15),
-    constructItem(134, 121, `${voteup_count}`, 'value', 15),
-    constructItem(134, 159, `${thanked_count}`, 'value', 15),
-    constructItem(295, 84, `${question_count}`, 'value', 15),
-    constructItem(295, 121, `${answer_count}`, 'value', 15),
-    constructItem(295, 158, `${articles_count}`, 'value', 15),
+    constructItem(134, 120, `${voteup_count}`, 'value', 15),
+    constructItem(134, 157, `${thanked_count}`, 'value', 15),
+    constructItem(295, 83, `${question_count}`, 'value', 15),
+    constructItem(295, 120, `${answer_count}`, 'value', 15),
+    constructItem(295, 157, `${articles_count}`, 'value', 15),
   ];
   return render(items, theme);
 }

@@ -19,15 +19,15 @@ function renderJuejinCard(data) {
   let items = [
     constructItem(94, 44, `${user_name}&apos;s Juejin Stats`, 'title', 18),
     constructItem(55, 84, `Followers`, 'label', 13.5),
-    constructItem(203, 85, `Likes`, 'label', 13.5),
+    constructItem(203, 84, `Likes`, 'label', 13.5),
     constructItem(55, 119, `Articles`, 'label', 13.5),
     constructItem(203, 119, `Article Views`, 'label', 13.5),
     constructItem(55, 154, `Signature`, 'label', 13.5),
     constructItem(126, 84, `${follower_count}`, 'value', 15),
     constructItem(126, 119, `${article_count}`, 'value', 15),
-    constructItem(289, 86, `${got_digg_count}`, 'value', 15),
-    constructItem(289, 121, `${got_view_count}`, 'value', 15),
-    constructItem(126, 155, `${description}`, 'value', 13, '', 'YuGothicUI-Regular, Yu Gothic UI')
+    constructItem(289, 84, `${got_digg_count}`, 'value', 15),
+    constructItem(289, 119, `${got_view_count}`, 'value', 15),
+    constructItem(126, 154, `${description}`, 'value', 13, '', 'YuGothicUI-Regular, Yu Gothic UI')
   ];
   return render(items, theme);
 }

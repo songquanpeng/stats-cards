@@ -23,11 +23,11 @@ function renderGitHubCard(data) {
     constructItem(220, 120, `Following`, 'label', 13.5),
     constructItem(220, 157, `Forked`, 'label', 13.5),
     constructItem(134, 83, `${stars}`, 'value', 15),
-    constructItem(134, 121, `${repos}`, 'value', 15),
-    constructItem(134, 159, `${gists}`, 'value', 15),
-    constructItem(295, 84, `${followers}`, 'value', 15),
-    constructItem(295, 121, `${following}`, 'value', 15),
-    constructItem(295, 158, `${forks}`, 'value', 15)
+    constructItem(134, 120, `${repos}`, 'value', 15),
+    constructItem(134, 157, `${gists}`, 'value', 15),
+    constructItem(295, 83, `${followers}`, 'value', 15),
+    constructItem(295, 120, `${following}`, 'value', 15),
+    constructItem(295, 157, `${forks}`, 'value', 15)
   ];
   return render(items, theme);
 }
