@@ -36,6 +36,17 @@ async function getBilibiliInfo(id) {
     let data = res.data.data;
     result.fans = data.follower;
     result.following = data.following;
+    res = await axios.get(
+      `https://api.bilibili.com/x/space/upstat?mid=${id}`, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Mobile Safari/537.36',
+          'Cookie': `SESSDATA=${process.env['BILIBILI_SESSDATA']}`
+        },
+      }
+    )
+    data = res.data.data;
+    result.views = data.archive.view;
+    result.likes = data.likes;
   } catch (e) {
     console.error(e);
   }
