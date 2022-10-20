@@ -17,7 +17,7 @@ function renderBilibiliCard(data) {
     constructItem(126, 84, `${fans}`, 'value', 15),
     constructItem(126, 119, `${likes}`, 'value', 15),
     constructItem(289, 84, `${views}`, 'value', 15),
-    constructItem(289, 119, `${level}`, 'value', 15),
+    constructItem(289, 119, `LV${level}`, 'value', 15),
     constructItem(126, 154, `${description}`, 'value', 13, '', 'YuGothicUI-Regular, Yu Gothic UI')
   ];
   return render(items, theme);
