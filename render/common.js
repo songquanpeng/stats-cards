@@ -50,6 +50,7 @@ function renderText(data) {
   let weight = '';
   if (data.type === 'title') {
     weight = ` font-weight="700" `;
+    return `<text id="${data.id}" x="50%" y="${data.translate_y}" dominant-baseline="middle" text-anchor="middle" fill="${data.color}" font-size="${data.font_size}" font-family="${data.font}" ${weight}>${data.text}</text>`;
   }
   return `<text id="${data.id}" transform="translate(${data.translate_x} ${data.translate_y})" fill="${data.color}" font-size="${data.font_size}" font-family="${data.font}" ${weight}><tspan x="0" y="0">${data.text}</tspan></text>\n`;
 }
