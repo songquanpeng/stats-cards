@@ -4,7 +4,7 @@
 
 支持以下网站：
 - [x] 知乎
-- [x] B 站（部分信息目前未能成功获取）
+- [x] B 站
 - [x] LeetCode
 - [x] LeetCode 中文站
 - [x] 掘金（By [@jiweiyuan](https://github.com/jiweiyuan)）
