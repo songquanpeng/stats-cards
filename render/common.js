@@ -1,14 +1,6 @@
+const themes = require('./theme.js');
 function render(items, theme = 'light') {
-  let titleColor = '#212121';
-  let backgroundColor = '#ffffff';
-  let labelColor = '#9e9e9e';
-  let valueColor = '#212121';
-  if (theme === 'dark') {
-    titleColor = '#FD428D';
-    backgroundColor = '#141321';
-    labelColor = '#A8FDF6';
-    valueColor = '#A8FDF6';
-  }
+  themes.set_theme(theme);
   let textTags = '';
   for (let i = 0; i < items.length; i++) {
     items[i].id = `key_${i}`;
