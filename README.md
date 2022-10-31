@@ -25,7 +25,7 @@
 
 主题列表：`light`、`dark`、`merko`、`gruvbox`、`gruvbox_light`、`tokyonight`、`onedark`...
 
-完整主题列表参见 [common/theme.js](./common/theme.js)。
+完整主题列表参见 [common/theme.js](./common/theme.js)，或参见 [github-readme-stats 中的主题列表](https://github.com/anuraghazra/github-readme-stats/tree/master/themes)。
 
 ## 演示
 GitHub：`https://stats.justsong.cn/api/github?username=songquanpeng`
@@ -65,7 +65,7 @@ CSDN：`https://stats.justsong.cn/api/csdn?id=vczh`
 ![牛客数据](https://stats.justsong.cn/api/nowcoder?id=2004383)
 
 ## 其他
-1. [创意参考](https://github.com/anuraghazra/github-readme-stats)
+1. [创意参考 & 主题参考](https://github.com/anuraghazra/github-readme-stats) 
 2. 如有爬虫失效，请及时提 issue！
 3. 卡片本身带有阴影效果，然而有些博客主题会自动给图片加阴影效果，这样将导致出现双重阴影，解决方法是使用 img 标签和 CSS 来移除博客主题提供的阴影效果，例如：`<img src="https://stats.justsong.cn/api/leetcode?username=username&cn=true" style="box-shadow:none !important">`
 4. 点击[查看都有谁在使用](https://github.com/search?q=extension%3Amd+%22stats.justsong.cn%22&type=Code)。

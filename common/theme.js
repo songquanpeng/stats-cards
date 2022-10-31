@@ -13,17 +13,17 @@ themes = {
     labelColor: '#9e9e9e',
     valueColor: '#212121'
   },
-  'dark': {
+  'dark': {  // this is for compatibility
     titleColor: '#FD428D',
     labelColor: '#A8FDF6',
     valueColor: '#A8FDF6',
     backgroundColor: '#141321'
   },
-  "dark": {
-    titleColor: "#ffffff",
-    labelColor: "#79ff97",
-    valueColor: "#9f9f9f",
-    backgroundColor: "#151515",
+  'dark2': {
+    titleColor: '#ffffff',
+    labelColor: '#79ff97',
+    valueColor: '#9f9f9f',
+    backgroundColor: '#151515'
   },
   'radical': {
     titleColor: '#fe428e',
@@ -61,7 +61,7 @@ themes = {
     valueColor: '#df6d74',
     backgroundColor: '#282c34'
   },
-  'onedark': {
+  'cobalt': {
     titleColor: '#e683d9',
     labelColor: '#0480ef',
     valueColor: '#75eeb2',
@@ -79,7 +79,7 @@ themes = {
     valueColor: '#fff',
     backgroundColor: '#000'
   },
-  'highcontrast': {
+  'dracula': {
     titleColor: '#ff6e96',
     labelColor: '#79dafa',
     valueColor: '#f8f8f2',
@@ -181,7 +181,7 @@ themes = {
     labelColor: '#88c0d0',
     backgroundColor: '#2e3440'
   },
-  ' gotham': {
+  'gotham': {
     titleColor: '#2aa889',
     labelColor: '#599cab',
     valueColor: '#99d1ce',
@@ -217,7 +217,7 @@ themes = {
     valueColor: '#ffffff',
     backgroundColor: '#000000'
   },
-  'graywhite': {
+  'calm': {
     titleColor: '#e07a5f',
     labelColor: '#edae49',
     valueColor: '#ebcfb2',
@@ -247,7 +247,7 @@ themes = {
     valueColor: '#E0AA3E',
     backgroundColor: '#260000'
   },
-  'maroongold': {
+  'yeblu': {
     titleColor: '#ffff00',
     labelColor: '#ffff00',
     valueColor: '#ffffff',
