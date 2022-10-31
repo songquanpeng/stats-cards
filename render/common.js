@@ -1,6 +1,7 @@
-const themes = require('./theme.js');
+const getTheme = require('../common/theme.js');
+
 function render(items, theme = 'light') {
-  themes.set_theme(theme);
+  const {titleColor, backgroundColor, labelColor, valueColor} = getTheme(theme);
   let textTags = '';
   for (let i = 0; i < items.length; i++) {
     items[i].id = `key_${i}`;
