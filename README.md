@@ -15,7 +15,7 @@
 - [ ] Steam
 - [ ] 网易云音乐
 
-支持多种主题，使用时在 url 后加入 `&theme=dark` 即可，例如：
+支持多种主题，使用时在 url 后加入 `&theme=<theme_name>` 即可，例如：
 `https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark`
 
 ![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark)
