@@ -15,11 +15,17 @@
 - [ ] Steam
 - [ ] 网易云音乐
 
-支持黑色主题，使用时在 url 后加入 `&theme=dark` 即可，例如：
+支持多种主题，使用时在 url 后加入 `&theme=<theme_name>` 即可，例如：
 `https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark`
 
-![我的 LeetCode 数据](https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark)
+<p>
+  <img src="https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=light" alt="JustSong's LeetCode Stats" width="49%" />
+  <img src="https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=dark" alt="JustSong's LeetCode Stats" width="49%" /> 
+</p>
 
+主题列表：`light`、`dark`、`merko`、`gruvbox`、`gruvbox_light`、`tokyonight`、`onedark`...
+
+完整主题列表参见 [common/theme.js](./common/theme.js)。
 
 ## 演示
 GitHub：`https://stats.justsong.cn/api/github?username=songquanpeng`
