@@ -38,11 +38,21 @@
 
 ## 演示
 
-自定义网站监控：`https://stats.justsong.cn/api/website/?url=https://github.com/`
+### 自定义网站监控
 
-> 注意监控不是实时的，其受到设置的缓存时间影响
+自定义网站监控：`https://stats.justsong.cn/api/website/?url=https://github.com/&style=flat&logo=github`
 
-![GitHub 监控](https://stats.justsong.cn/api/website/?url=https://github.com/)
+其中 style 和 logo 是可选的，
+具体取值参考 [shield.io](https://shields.io/category/monitoring#:~:text=PREFIX%3E%26suffix%3D%3CSUFFIX%3E-,Styles,-The%20following%20styles)
+。
+
+> 注意监控不是实时的，其受到设置的缓存时间的影响
+
+![GitHub 监控](https://stats.justsong.cn/api/website/?url=https://github.com/&style=flat)
+![Google 监控](https://stats.justsong.cn/api/website/?url=https://www.google.com/&style=flat)
+![Zhihu 监控](https://stats.justsong.cn/api/website/?url=https://www.zhihu.com/&style=flat)
+
+### 网站数据展示
 
 GitHub：`https://stats.justsong.cn/api/github?username=songquanpeng`
 

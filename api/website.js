@@ -2,12 +2,13 @@ const { cache } = require('../common/cache');
 const axios = require('axios');
 
 module.exports = async (req, res) => {
-  const { url } = req.query;
+  let { url, style, logo } = req.query;
   let urlObj;
   try {
     urlObj = new URL(url);
   } catch {
     let message = 'Invalid URL';
+    url = url.replaceAll('-', '--');
     return res.redirect(`https://img.shields.io/badge/${url}-${message}-red`);
   }
   let key = 'w' + urlObj.origin;
@@ -41,7 +42,8 @@ module.exports = async (req, res) => {
   } else {
     color = 'red';
   }
+  let label = urlObj.origin.replaceAll('-', '--');
   return res.redirect(
-    `https://img.shields.io/badge/${urlObj.origin}-${message}-${color}`
+    `https://img.shields.io/badge/${label}-${message}-${color}?style=${style}&logo=${logo}`
   );
 };
