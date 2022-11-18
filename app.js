@@ -8,6 +8,7 @@ const juejin = require('./api/juejin');
 const csdn = require('./api/csdn');
 const nowcoder = require('./api/nowcoder');
 const github = require('./api/github');
+const website = require('./api/website');
 
 app.use('/api/zhihu', zhihu);
 app.use('/api/bilibili', bilibili);
@@ -16,6 +17,7 @@ app.use('/api/juejin', juejin);
 app.use('/api/csdn', csdn);
 app.use('/api/nowcoder', nowcoder);
 app.use('/api/github', github);
+app.use('/api/website', website);
 
 const server = http.createServer(app);
 

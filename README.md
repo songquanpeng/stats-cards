@@ -1,6 +1,6 @@
 # 网站数据卡片
 
-> 在 README 中展示你在一些流行的网站的数据。
+> 在 README 中展示网站数据，也可用于网站状态监控。
 
 ## 描述
 
@@ -19,6 +19,7 @@
 - [x] GitHub
 - [ ] Steam
 - [ ] 网易云音乐
+- [x] 自定义网站监控
 
 ### 支持的主题列表
 
@@ -37,11 +38,18 @@
 
 ## 演示
 
+自定义网站监控：`https://stats.justsong.cn/api/website/?url=https://github.com/`
+
+> 注意监控不是实时的，其受到设置的缓存时间影响
+
+![GitHub 监控](https://stats.justsong.cn/api/website/?url=https://github.com/)
+
 GitHub：`https://stats.justsong.cn/api/github?username=songquanpeng`
 
 ![我的 GitHub 数据](https://stats.justsong.cn/api/github?username=songquanpeng)
 
-知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`（注意是你的 id，即点开你的知乎主页，URL 中最后一段）
+知乎：`https://stats.justsong.cn/api/zhihu?username=excited-vczh`
+> 注意不是你主页显示的用户名，而是是点开你的知乎主页，URL 中最后一段，例如是 `https://www.zhihu.com/people/excited-vczh` 中的 `excited-vczh`
 
 ![轮子哥的知乎数据](https://stats.justsong.cn/api/zhihu?username=excited-vczh)
 
