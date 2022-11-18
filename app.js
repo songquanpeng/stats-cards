@@ -23,7 +23,7 @@ app.use('/api/github', github);
 app.use('/api/website', website);
 
 app.use(
-  serveStatic(path.join(__dirname, './'), {
+  serveStatic(path.join(__dirname, 'public'), {
     maxAge: cacheTime * 1000,
   })
 );
