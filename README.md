@@ -16,7 +16,7 @@
 - [ ] 思否
 - [x] 牛客
 - [x] CSDN
-- [x] Github
+- [x] GitHub
 - [ ] Steam
 - [ ] 网易云音乐
 
