@@ -33,7 +33,7 @@ module.exports = async (req, res) => {
   } else if (time < 100) {
     color = 'brightgreen';
   } else if (time < 500) {
-    color = 'yellowgreen';
+    color = 'green';
   } else if (time < 1000) {
     color = 'yellow';
   } else if (time < 2000) {
