@@ -1,148 +1,122 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang='zh'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset='UTF-8' />
+  <meta content='width=device-width, initial-scale=1' name='viewport' />
   <title>网站数据卡片</title>
-  <meta name="description" content="在 README 中展示你在知乎，B 站等网站的数据">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <style>
-      code {
-          background-color: transparent !important;
-          font-family: Consolas, monospace;
-          font-size: larger;
-          word-wrap: break-word;
-      }
-
-      img {
-          margin-top: 8px;
-      }
-
-      .dark .message-header {
-          background-color: rgb(28, 28, 38);
-      }
-
-      .github .message-header {
-          background-color: rgb(36, 41, 47);
-      }
-
-      .zhihu .message-header {
-          background-color: rgb(0, 102, 255);
-      }
-
-      .bilibili .message-header {
-          background-color: rgb(251, 114, 153);
-      }
-
-      .leetcode .message-header {
-          background-color: rgb(76, 175, 80);
-      }
-
-      .juejin .message-header {
-          background-color: rgb(55, 125, 247);
-      }
-
-      .csdn .message-header {
-          background-color: rgb(255, 77, 77);
-      }
-
-      .nowcoder .message-header {
-          background-color: rgb(61, 68, 76);
-      }
-  </style>
+  <meta
+    content='在 README 中展示你在知乎，GitHub，B 站，LeetCode，掘金，CSDN，牛客等网站的数据，也可用于服务状态监控. Show your LeetCode & GitHub stats in GitHub Profile.'
+    name='description'>
+  <meta content='#ffffff' name='theme-color' />
+  <link href='/public/bulma.min.css' rel='stylesheet'>
+  <link href='/public/main.css' rel='stylesheet'>
+  <script src='/public/main.js'></script>
 </head>
-<body style="width: 100%">
-<div style="margin: auto; max-width: 960px;padding-left: 8px; padding-right: 8px">
-  <h1 class="title" style="margin-top: 16px"><a style="color: black; text-decoration: none">网站数据卡片</a></h1>
-  <article class="message">
-    <div class="message-body">
-      在 README 中展示你在知乎，B 站，LeetCode，掘金等网站的数据，服务部署在 Vercel 上，保证服务稳定。
-      <br />
-      Github 仓库地址：<a href="https://github.com/songquanpeng/stats-cards">https://github.com/songquanpeng/stats-cards</a>
-    </div>
-  </article>
-  <article class="message dark">
-    <div class="message-header">
-      <p>暗黑模式</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/zhihu?username=excited-vczh&theme=dark</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/zhihu?username=excited-vczh&theme=dark">
-    </div>
-  </article>
-  <article class="message github">
-    <div class="message-header">
-      <p>GitHub</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/github?username=songquanpeng</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/github?username=songquanpeng">
-    </div>
-  </article>
-  <article class="message zhihu">
-    <div class="message-header">
-      <p>知乎</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/zhihu?username=excited-vczh</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/zhihu?username=excited-vczh">
-    </div>
-  </article>
-  <article class="message bilibili">
-    <div class="message-header">
-      <p>B 站</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/bilibili/?id=666</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/bilibili/?id=666">
-    </div>
-  </article>
-  <article class="message leetcode">
-    <div class="message-header">
-      <p>LeetCode</p>
-    </div>
-    <div class="message-body">
-      <p>国际版示例链接：<code>https://stats.justsong.cn/api/leetcode/?username=quanpeng</code></p>
-      <p>中国版示例链接：<code>https://stats.justsong.cn/api/leetcode/?username=quanpeng&cn=true</code></p>
-      <img alt="" src="https://stats.justsong.cn/api/leetcode/?username=quanpeng">
-    </div>
-  </article>
-  <article class="message juejin">
-    <div class="message-header">
-      <p>掘金</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/juejin?id=1556564194374926</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/juejin?id=1556564194374926">
-    </div>
-  </article>
-  <article class="message csdn">
-    <div class="message-header">
-      <p>CSDN</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/csdn?id=vczh</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/csdn?id=vczh">
-    </div>
-  </article>
-  <article class="message nowcoder">
-    <div class="message-header">
-      <p>牛客</p>
-    </div>
-    <div class="message-body">
-      <span>示例链接：<code>https://stats.justsong.cn/api/nowcoder?id=2004383</code></span>
-      <img alt="" src="https://stats.justsong.cn/api/nowcoder?id=2004383">
-    </div>
-  </article>
-</div>
+<body>
 
-<footer class="footer" style="background-color: white">
-  <div class="content has-text-centered">
-    <p>
-      <strong><a href="https://github.com/songquanpeng/stats-cards">stats cards</a></strong> by <a
-      href="https://github.com/songquanpeng">JustSong</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-    </p>
+<div>
+  <nav aria-label='main navigation' class='navbar nav-shadow' role='navigation'>
+    <div class='container'>
+      <div class='navbar-brand'>
+        <a class='navbar-item is-size-5' href='/' style='font-weight: bold'>
+          网站数据卡片
+        </a>
+        <a aria-expanded='false' aria-label='menu' class='navbar-burger burger' data-target='mainNavbar'
+           role='button'>
+          <span aria-hidden='true'></span>
+          <span aria-hidden='true'></span>
+          <span aria-hidden='true'></span>
+        </a>
+      </div>
+      <div class='navbar-menu' id='mainNavbar'>
+        <div class='navbar-start'>
+          <a class='navbar-item' href='/'> 首页 </a>
+          <a class='navbar-item' href='https://iamazing.cn/page/stats-cards'
+             target='_blank'> 帮助 </a>
+          <a class='navbar-item' href=''> 支持 </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+  <div class='container'>
+    <div class='normal-container'>
+      <div class='notification'>
+        点击<strong><a href='https://github.com/songquanpeng/stats-cards/blob/master/README.md'
+                     target='_blank'>帮助</a></strong>查看具体的用法，本页面仅供展示。
+        项目地址：<a href='https://github.com/songquanpeng/stats-cards'
+                target='_blank'>https://github.com/songquanpeng/stats-cards</a>
+        <br />
+      </div>
+      <div class='card'>
+        <header class='card-header'>
+          <p class='card-header-title'>
+            网站数据展示
+          </p>
+        </header>
+        <div class='card-content'>
+          <div class='content'>
+            <div class='columns'>
+              <div class='column'>
+                <img alt='GitHub' src='/api/github?username=songquanpeng&theme=light'>
+              </div>
+              <div class='column'>
+                <img alt='知乎' src='/api/zhihu?username=excited-vczh'>
+              </div>
+            </div>
+            <div class='columns'>
+              <div class='column'>
+                <img alt='LeetCode' src='/api/leetcode/?username=quanpeng'>
+              </div>
+              <div class='column'>
+                <img alt='力扣' src='/api/leetcode/?username=quanpeng&cn=true'>
+              </div>
+            </div>
+            <div class='columns'>
+              <div class='column'>
+                <img alt='B 站' src='/api/bilibili/?id=666'>
+              </div>
+              <div class='column'>
+                <img alt='掘金' src='/api/juejin?id=1556564194374926'>
+              </div>
+            </div>
+            <div class='columns'>
+              <div class='column'>
+                <img alt='CSDN' src='/api/csdn?id=vczh'>
+              </div>
+              <div class='column'>
+                <img alt='牛客' src='/api/nowcoder?id=6484283'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</footer>
+  <footer class='footer' style='background-color: white'>
+    <div class='content has-text-centered'>
+      <p>
+        <a href='https://github.com/songquanpeng/stats-cards'>网站数据卡片</a> 由 <a href='https://github.com/songquanpeng'>JustSong</a>
+        构建，源代码遵循
+        <a href='https://opensource.org/licenses/mit-license.php'>MIT</a> 协议
+      </p>
+    </div>
+  </footer>
+</div>
 </body>
+</html>
+

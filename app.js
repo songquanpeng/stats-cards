@@ -1,5 +1,6 @@
 const express = require('express');
 const http = require('http');
+const serveStatic = require('serve-static');
 const app = express();
 const zhihu = require('./api/zhihu');
 const bilibili = require('./api/bilibili');
@@ -9,6 +10,8 @@ const csdn = require('./api/csdn');
 const nowcoder = require('./api/nowcoder');
 const github = require('./api/github');
 const website = require('./api/website');
+const path = require('path');
+const { cacheTime } = require('./common/cache');
 
 app.use('/api/zhihu', zhihu);
 app.use('/api/bilibili', bilibili);
@@ -18,6 +21,12 @@ app.use('/api/csdn', csdn);
 app.use('/api/nowcoder', nowcoder);
 app.use('/api/github', github);
 app.use('/api/website', website);
+
+app.use(
+  serveStatic(path.join(__dirname, './'), {
+    maxAge: cacheTime * 1000,
+  })
+);
 
 const server = http.createServer(app);
 
