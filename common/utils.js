@@ -11,7 +11,31 @@ const desktopConfig = {
   },
 };
 
+const processData = (data) => {
+  for (let attr in data) {
+    if (typeof data[attr] === 'number') {
+      let num = data[attr];
+      let numStr = num;
+      if (num >= 1000000) {
+        numStr = (num / 1000000).toFixed(1).toString();
+        if (numStr.endsWith('.0')) {
+          numStr = numStr.slice(0, -2);
+        }
+        numStr += 'M';
+      } else if (num >= 10000) {
+        numStr = (num / 1000).toFixed(1).toString();
+        if (numStr.endsWith('.0')) {
+          numStr = numStr.slice(0, -2);
+        }
+        numStr += 'K';
+      }
+      data[attr] = numStr;
+    }
+  }
+};
+
 module.exports = {
   mobileConfig,
-  desktopConfig
+  desktopConfig,
+  processData,
 };

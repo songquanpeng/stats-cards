@@ -1,6 +1,7 @@
 const getNowCoderInfo = require('../crawer/nowcoder');
 const renderNowCoderCard = require('../render/nowcoder');
 const { cache, cacheTime } = require('../common/cache');
+const { processData } = require('../common/utils');
 
 module.exports = async (req, res) => {
   const { id, theme } = req.query;
@@ -11,6 +12,7 @@ module.exports = async (req, res) => {
     cache.set(key, data);
   }
   data.theme = theme;
+  processData(data);
   res.setHeader('Content-Type', 'image/svg+xml');
   res.setHeader('Cache-Control', `public, max-age=${cacheTime}`);
   return res.send(renderNowCoderCard(data));
