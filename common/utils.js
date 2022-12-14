@@ -27,7 +27,7 @@ const processData = (data) => {
         if (numStr.endsWith('.0')) {
           numStr = numStr.slice(0, -2);
         }
-        numStr += 'K';
+        numStr += 'k';
       }
       data[attr] = numStr;
     }
