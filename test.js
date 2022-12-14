@@ -1,7 +1,7 @@
-const getNeteaseMusicInfo = require('./crawer/netease-music')
+const getLeetCodeCnInfo = require('./crawer/leetcode-cn');
 
 async function test() {
-  let info = await getNeteaseMusicInfo('506085251')
+  let info = await getLeetCodeCnInfo('quanpeng')
   console.log(info)
 }
 

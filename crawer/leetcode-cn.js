@@ -11,56 +11,49 @@ async function getLeetCodeCnInfo(username) {
     star_rating: 0
   };
   let headers = {
-    'authority': 'leetcode-cn.com',
+    'authority': 'leetcode.cn',
     'content-type': 'application/json',
-    'origin': 'https://leetcode-cn.com',
+    'origin': 'https://leetcode.cn',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-mode': ' cors',
     'sec-fetch-dest': 'empty',
-    'referer': `https://leetcode-cn.com/u/${username}/`,
+    'referer': `https://leetcode.cn/u/${username}/`,
     'User-Agent':
       'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Mobile Safari/537.36'
 
   };
   try {
-    let res = await axios.post(
-      `https://leetcode-cn.com/graphql`,
+    let endPoints = [
       {
-        'operationName': 'userQuestionProgress',
-        'variables': { 'userSlug': `${username}` },
-        'query': 'query userQuestionProgress($userSlug: String\u0021) {  userProfileUserQuestionProgress(userSlug: $userSlug) {    numAcceptedQuestions {      difficulty      count      __typename    }    numFailedQuestions {      difficulty      count      __typename    }    numUntouchedQuestions {      difficulty      count      __typename    }    __typename  }}'
-      },
-      {
-        headers
+        url: `https://leetcode.cn/graphql`,
+        data: {
+          'operationName': 'userQuestionProgress',
+          'variables': { 'userSlug': `${username}` },
+          'query': 'query userQuestionProgress($userSlug: String\u0021) {  userProfileUserQuestionProgress(userSlug: $userSlug) {    numAcceptedQuestions {      difficulty      count      __typename    }    numFailedQuestions {      difficulty      count      __typename    }    numUntouchedQuestions {      difficulty      count      __typename    }    __typename  }}'
+        }
+      }, {
+        url: `https://leetcode.cn/graphql`,
+        data: {
+          'operationName': 'userQuestionSubmitStats',
+          'variables': { 'userSlug': `${username}` },
+          'query': 'query userQuestionSubmitStats($userSlug: String!) {  userProfileUserQuestionSubmitStats(userSlug: $userSlug) {    acSubmissionNum {      difficulty      count      __typename    }    totalSubmissionNum {      difficulty      count      __typename    }    __typename  }}'
+        }
       }
-    );
-
-    let data = res.data.data;
-    result.easy_solved = data.userProfileUserQuestionProgress.numAcceptedQuestions[0].count;
-    result.medium_solved = data.userProfileUserQuestionProgress.numAcceptedQuestions[1].count;
-    result.hard_solved = data.userProfileUserQuestionProgress.numAcceptedQuestions[2].count;
+    ];
+    let [userQuestionProgressResponse, userQuestionSubmitStatsResponse] = await Promise.all(endPoints.map(endPoint => axios.post(endPoint.url, endPoint.data, {
+      headers
+    })));
+    result.easy_solved = userQuestionProgressResponse.data.data.userProfileUserQuestionProgress.numAcceptedQuestions[0].count;
+    result.medium_solved = userQuestionProgressResponse.data.data.userProfileUserQuestionProgress.numAcceptedQuestions[1].count;
+    result.hard_solved = userQuestionProgressResponse.data.data.userProfileUserQuestionProgress.numAcceptedQuestions[2].count;
     result.total_solved = result.easy_solved + result.medium_solved + result.hard_solved;
-
-    res = await axios.post(
-      `https://leetcode-cn.com/graphql`,
-      {
-        'operationName': 'userQuestionSubmitStats',
-        'variables': { 'userSlug': `${username}` },
-        'query': 'query userQuestionSubmitStats($userSlug: String!) {  userProfileUserQuestionSubmitStats(userSlug: $userSlug) {    acSubmissionNum {      difficulty      count      __typename    }    totalSubmissionNum {      difficulty      count      __typename    }    __typename  }}'
-      },
-      {
-        headers
-      }
-    );
-
-    data = res.data.data;
     let totalSubmitNum = 0;
     let acceptSubmitNum = 0;
     for (let i = 0; i < 3; i++) {
-      totalSubmitNum += data.userProfileUserQuestionSubmitStats.totalSubmissionNum[i].count;
-      acceptSubmitNum += data.userProfileUserQuestionSubmitStats.acSubmissionNum[i].count;
+      totalSubmitNum += userQuestionSubmitStatsResponse.data.data.userProfileUserQuestionSubmitStats.totalSubmissionNum[i].count;
+      acceptSubmitNum += userQuestionSubmitStatsResponse.data.data.userProfileUserQuestionSubmitStats.acSubmissionNum[i].count;
     }
-    result.acceptance =  acceptSubmitNum / totalSubmitNum;
+    result.acceptance = acceptSubmitNum / totalSubmitNum;
     result.acceptance *= 100;
     result.acceptance = result.acceptance.toFixed(1);
     result.acceptance = result.acceptance + '%';
