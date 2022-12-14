@@ -4,7 +4,7 @@ const renderLeetCodeCard = require('../render/leetcode');
 const { cache, cacheTime } = require('../common/cache');
 
 module.exports = async (req, res) => {
-  const { username, cn, theme, cn_username } = req.query;
+  const { username, cn, theme, cn_username, lang } = req.query;
   let data = null;
   if (!cn_username) {
     if (cn) {
@@ -44,5 +44,5 @@ module.exports = async (req, res) => {
   data.theme = theme;
   res.setHeader('Content-Type', 'image/svg+xml');
   res.setHeader('Cache-Control', `public, max-age=${cacheTime}`);
-  return res.send(renderLeetCodeCard(data));
+  return res.send(renderLeetCodeCard(data, lang));
 };

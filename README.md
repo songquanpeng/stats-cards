@@ -38,6 +38,14 @@
 完整主题列表参见 [common/theme.js](./common/theme.js)
 ，或参见 [github-readme-stats 中的主题列表](https://github.com/anuraghazra/github-readme-stats/tree/master/themes)。
 
+### 支持的语言列表
+
+默认语言为英文，如果想要更改为中文显示，在 url 后加入 `&lang=zh-CN` 即可，例如：
+<p>
+  <img src="https://stats.justsong.cn/api/juejin?id=1556564194374926&lang=zh-CN" alt="掘金酱的掘金数据" width="49%" />
+  <img src="https://stats.justsong.cn/api/bilibili/?id=483246073&lang=zh-CN" alt="蓝天的 B 站数据" width="49%" /> 
+</p>
+
 ## 演示
 
 ### 自定义网站监控

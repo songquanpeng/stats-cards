@@ -34,8 +34,14 @@ const processData = (data) => {
   }
 };
 
+const isEndsWithASCII = (str) => {
+  if (str.length === 0) return false;
+  return str.charCodeAt(str.length - 1) <= 127;
+};
+
 module.exports = {
   mobileConfig,
   desktopConfig,
   processData,
+  isEndsWithASCII,
 };
