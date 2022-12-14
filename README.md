@@ -1,3 +1,7 @@
+<p align="right">
+   <strong>中文</strong> | <a href="./README.en.md">English</a>
+</p>
+
 # 网站数据卡片
 
 > 在 README 中展示网站数据，也可用于网站状态监控
