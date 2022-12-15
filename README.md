@@ -2,11 +2,35 @@
    <strong>中文</strong> | <a href="./README.en.md">English</a>
 </p>
 
+<div align="center">
+
 # 网站数据卡片
 
-> 在 README 中展示网站数据，也可用于网站状态监控
+_✨ 在 README 中展示网站数据，也可用于网站状态监控 ✨_
 
-服务部署地址：https://stats.justsong.cn/
+</div>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/songquanpeng/stats-cards/master/LICENSE">
+    <img src="https://img.shields.io/github/license/songquanpeng/stats-cards?color=brightgreen" alt="license">
+  </a>
+  <a href="https://github.com/songquanpeng/stats-cards/releases/latest">
+    <img src="https://img.shields.io/github/v/release/songquanpeng/stats-cards?color=brightgreen&include_prereleases" alt="release">
+  </a>
+  <a href="https://stats.justsong.cn/">
+    <img src="https://stats.justsong.cn/api/website/?url=https://stats.justsong.cn/" alt="release">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#描述">描述</a>
+  ·
+  <a href="#演示">演示</a>
+  ·
+  <a href="https://stats.justsong.cn/reward.html">赞赏</a>
+  ·
+  <a href="https://github.com/songquanpeng/stats-cards/issues">反馈</a>
+</p>
 
 ## 描述
 

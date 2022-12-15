@@ -2,11 +2,35 @@
     <a href="./README.md">中文</a> | <strong>English</strong>
 </p>
 
+<div align="center">
+
 # Stats Cards
 
-> Show your LeetCode & GitHub stats in GitHub Profile.
+_✨ Show your LeetCode & GitHub stats in GitHub Profile. ✨_
 
-Service deployment address: https://stats.justsong.cn/
+</div>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/songquanpeng/stats-cards/master/LICENSE">
+    <img src="https://img.shields.io/github/license/songquanpeng/stats-cards?color=brightgreen" alt="license">
+  </a>
+  <a href="https://github.com/songquanpeng/stats-cards/releases/latest">
+    <img src="https://img.shields.io/github/v/release/songquanpeng/stats-cards?color=brightgreen&include_prereleases" alt="release">
+  </a>
+  <a href="https://stats.justsong.cn/">
+    <img src="https://stats.justsong.cn/api/website/?url=https://stats.justsong.cn/" alt="release">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#Description">Description</a>
+  ·
+  <a href="#Demonstration">Demonstration</a>
+  ·
+  <a href="https://stats.justsong.cn/reward.html">Reward</a>
+  ·
+  <a href="https://github.com/songquanpeng/stats-cards/issues">Feedback</a>
+</p>
 
 ## Description
 
