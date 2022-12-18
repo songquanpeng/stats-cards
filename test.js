@@ -1,4 +1,4 @@
-const getLeetCodeCnInfo = require('./crawer/leetcode-cn');
+const getLeetCodeCnInfo = require('./crawler/leetcode-cn');
 
 async function test() {
   let info = await getLeetCodeCnInfo('quanpeng')

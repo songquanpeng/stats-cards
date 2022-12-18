@@ -1,4 +1,4 @@
-const getZhihuInfo = require('../crawer/zhihu');
+const getZhihuInfo = require('../crawler/zhihu');
 const renderZhihuCard = require('../render/zhihu');
 const { cache, cacheTime } = require('../common/cache');
 const { processData } = require('../common/utils');

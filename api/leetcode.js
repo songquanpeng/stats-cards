@@ -1,11 +1,11 @@
-const getLeetCodeInfo = require('../crawer/leetcode');
-const getLeetCodeCnInfo = require('../crawer/leetcode-cn');
+const getLeetCodeInfo = require('../crawler/leetcode');
+const getLeetCodeCnInfo = require('../crawler/leetcode-cn');
 const renderLeetCodeCard = require('../render/leetcode');
 const { cache, cacheTime } = require('../common/cache');
 
 module.exports = async (req, res) => {
   const { username, cn, theme, cn_username, lang } = req.query;
-  let data = null;
+  let data;
   if (!cn_username) {
     if (cn) {
       let key = 'lcn' + username;

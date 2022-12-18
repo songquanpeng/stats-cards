@@ -1,4 +1,4 @@
-const getJuejinInfo = require('../crawer/juejin');
+const getJuejinInfo = require('../crawler/juejin');
 const renderJuejinCard = require('../render/juejin');
 const { cacheTime, cache } = require('../common/cache');
 const { processData } = require('../common/utils');

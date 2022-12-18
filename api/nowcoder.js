@@ -1,4 +1,4 @@
-const getNowCoderInfo = require('../crawer/nowcoder');
+const getNowCoderInfo = require('../crawler/nowcoder');
 const renderNowCoderCard = require('../render/nowcoder');
 const { cache, cacheTime } = require('../common/cache');
 const { processData } = require('../common/utils');

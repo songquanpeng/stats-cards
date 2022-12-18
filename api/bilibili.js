@@ -1,4 +1,4 @@
-const getBilibiliInfo = require('../crawer/bilibili');
+const getBilibiliInfo = require('../crawler/bilibili');
 const renderBilibiliCard = require('../render/bilibili');
 const { cacheTime, cache } = require('../common/cache');
 const { processData } = require('../common/utils');
