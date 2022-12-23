@@ -39,9 +39,19 @@ const isEndsWithASCII = (str) => {
   return str.charCodeAt(str.length - 1) <= 127;
 };
 
+const encodeHTML = (str) => {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+};
+
 module.exports = {
   mobileConfig,
   desktopConfig,
   processData,
   isEndsWithASCII,
+  encodeHTML,
 };

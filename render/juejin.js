@@ -1,5 +1,5 @@
 const { render, constructItem } = require('./common');
-const { isEndsWithASCII } = require('../common/utils');
+const { isEndsWithASCII, encodeHTML } = require('../common/utils');
 
 function renderJuejinCard(data, lang) {
   let {
@@ -16,7 +16,7 @@ function renderJuejinCard(data, lang) {
     description = description.substr(0, lengthLimit);
     description += '...';
   }
-
+  description = encodeHTML(description);
   let items = [];
   switch (lang) {
     case 'zh-CN':

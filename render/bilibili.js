@@ -1,5 +1,5 @@
 const { constructItem, render } = require('./common');
-const { isEndsWithASCII } = require('../common/utils');
+const { isEndsWithASCII, encodeHTML } = require('../common/utils');
 
 function renderBilibiliCard(data, lang) {
   let { name, description, following, fans, likes, level, views, theme } = data;
@@ -8,6 +8,7 @@ function renderBilibiliCard(data, lang) {
     description = description.substr(0, lengthLimit);
     description += '...';
   }
+  description = encodeHTML(description);
   let items = [];
   switch (lang) {
     case 'zh-CN':
