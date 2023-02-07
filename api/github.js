@@ -4,7 +4,10 @@ const { cacheTime, cache } = require('../common/cache');
 const { processData } = require('../common/utils');
 
 module.exports = async (req, res) => {
-  const { username, theme, lang } = req.query;
+  let { username, theme, lang, id } = req.query;
+  if (username === undefined) {
+    username = id;
+  }
   let key = 'g' + username;
   let data = cache.get(key);
   if (!data) {
