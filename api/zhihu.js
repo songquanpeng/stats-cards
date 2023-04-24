@@ -4,7 +4,7 @@ const { cache, cacheTime } = require('../common/cache');
 const { processData } = require('../common/utils');
 
 module.exports = async (req, res) => {
-  let { username, theme, lang, id } = req.query;
+  let { username, theme, lang, id, raw } = req.query;
   if (username === undefined) {
     username = id;
   }
@@ -13,6 +13,9 @@ module.exports = async (req, res) => {
   if (!data) {
     data = await getZhihuInfo(username);
     cache.set(key, data);
+  }
+  if (raw) {
+    return res.json(data);
   }
   data.theme = theme;
   processData(data);

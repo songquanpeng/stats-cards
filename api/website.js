@@ -2,7 +2,7 @@ const { cache } = require('../common/cache');
 const axios = require('axios');
 
 module.exports = async (req, res) => {
-  let { url, style, logo } = req.query;
+  let { url, style, logo, raw } = req.query;
   let urlObj;
   try {
     urlObj = new URL(url);
@@ -25,6 +25,9 @@ module.exports = async (req, res) => {
       time = -1;
     }
     cache.set(key, time);
+  }
+  if (raw) {
+    return res.json({ time });
   }
   let color;
   let message = `${time}ms`;
