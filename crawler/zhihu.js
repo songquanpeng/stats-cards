@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 async function getZhihuInfo(username) {
   let result = {
     name: 'username',
-    description: '',
+    description: 'No description',
     follower_count: 0,
     answer_count: 0,
     voteup_count: 0,
