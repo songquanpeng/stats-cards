@@ -29,7 +29,7 @@ function renderZhihuCard(data, lang) {
         constructItem(126, 119, `${favorited_count}`, 'value', 15),
         constructItem(289, 84, `${voteup_count}`, 'value', 15),
         constructItem(289, 119, `${liked_count}`, 'value', 15),
-        constructItem(126, 154, `${description}`, 'value', 13),
+        constructItem(126, 154, `${description ? description : "暂无签名"}`, 'value', 13),
       ];
       break;
     default:
@@ -44,7 +44,7 @@ function renderZhihuCard(data, lang) {
         constructItem(126, 119, `${favorited_count}`, 'value', 15),
         constructItem(289, 84, `${voteup_count}`, 'value', 15),
         constructItem(289, 119, `${liked_count}`, 'value', 15),
-        constructItem(126, 154, `${description}`, 'value', 13),
+        constructItem(126, 154, `${description ? description : "no signature"}`, 'value', 13),
       ];
       break;
   }
