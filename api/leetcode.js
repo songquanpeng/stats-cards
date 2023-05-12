@@ -29,6 +29,7 @@ module.exports = async (req, res) => {
       data = await getLeetCodeInfo(username);
       cache.set(key, data);
     }
+    data = { ...data };
     let cn_key = 'lcn' + cn_username;
     let cn_data = cache.get(cn_key);
     if (!cn_data) {
