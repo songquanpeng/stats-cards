@@ -9,6 +9,7 @@ const juejin = require('./api/juejin');
 const csdn = require('./api/csdn');
 const nowcoder = require('./api/nowcoder');
 const github = require('./api/github');
+const mycard = require('./api/mycard');
 const website = require('./api/website');
 const path = require('path');
 const { cacheTime } = require('./common/cache');
@@ -21,6 +22,7 @@ app.use('/api/csdn', csdn);
 app.use('/api/nowcoder', nowcoder);
 app.use('/api/github', github);
 app.use('/api/website', website);
+app.use('/api/mycard',mycard);
 
 app.use(
   serveStatic(path.join(__dirname, 'public'), {
