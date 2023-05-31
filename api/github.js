@@ -9,7 +9,6 @@ module.exports = async (req, res) => {
     username = id;
   }
   let key = 'g' + username;
-  console.log("123");
   let data = cache.get(key);
   if (!data) {
     data = await getGitHubInfo(username);
