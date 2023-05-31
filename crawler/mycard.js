@@ -1,6 +1,11 @@
 const axios = require('axios');
 
 let config = {};
+if (process.env['GITHUB_TOKEN']) {
+    config = {
+        headers: { Authorization: `Bearer ${process.env['GITHUB_TOKEN']}` }
+    };
+}
 
 async function getMycardInfo(username) {
     let result = {
