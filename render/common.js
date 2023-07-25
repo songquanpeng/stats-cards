@@ -33,7 +33,7 @@ function render(items, theme = 'light') {
     </filter>
   </defs>
   <g transform='matrix(1, 0, 0, 1, 0, 0)' filter='url(#Card)'>
-    <rect id='Card-2' data-name='Card' width='364' height='192' rx='8' transform='translate(9 6)' fill='${backgroundColor}'/>
+    <rect id='Card-2' data-name='Card' width='364' height='192' rx='8' transform='translate(9 9)' fill='${backgroundColor}'/>
   </g>
   ${textTags}
 </svg>
