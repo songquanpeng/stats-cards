@@ -140,9 +140,11 @@ CSDN：`https://stats.justsong.cn/api/csdn?id=vczh`
 
 1. `BILIBILI_SESSDATA`：B 站的 `SESSDATA` Cookie，用以抓取 B 站数据，注意这个 Cookie 半年过期一次，届时需要重新设置 & 部署。
 2. `GITHUB_TOKEN`：GitHub Token，无任何权限的即可，用于抓取 GitHub 数据。
-3. `CACHE_TIME`：缓存时间，包括服务端缓存和客户端缓存，单位为秒，默认 `6000`，即 100 分钟。
-4. `MAX_CACHE_ITEMS`：最大缓存数量，默认 `1024`，缓存超出后将采取 LRU 策略进行淘汰。
-5. `PORT`：服务端口号，默认 `3000`。
+3. `STEAM_ID`: Steam的个人ID, 使用浏览器登录Steam后，点击个人信息，网站地址中profiles后面的部分就是STEAM_ID
+4. `STEAM_API_TOKEN`: 根据这个链接获取token，https://steamcommunity.com/dev/apikey
+5. `CACHE_TIME`：缓存时间，包括服务端缓存和客户端缓存，单位为秒，默认 `6000`，即 100 分钟。
+6. `MAX_CACHE_ITEMS`：最大缓存数量，默认 `1024`，缓存超出后将采取 LRU 策略进行淘汰。
+7. `PORT`：服务端口号，默认 `3000`。
 
 ### 部署到 Vercel
 
