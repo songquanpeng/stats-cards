@@ -46,7 +46,7 @@ Currently, we support the following websites, PR is welcomed:
 - [x] NowCoder
 - [x] CSDN
 - [x] GitHub
-- [ ] Steam
+- [x] Steam
 - [ ] NetEase Music
 - [x] Custom Website Monitoring
 
@@ -126,6 +126,10 @@ CSDN: `https://stats.justsong.cn/api/csdn?id=vczh`
 Nowcoder: `https://stats.justsong.cn/api/nowcoder?id=6484283`
 
 ![牛客数据](https://stats.justsong.cn/api/nowcoder?id=6484283)
+
+Steam: `https://stats.justsong.cn/api/steam`
+
+![Steam数据](https://stats.justsong.cn/api/steam)
 
 ## Deployment
 
