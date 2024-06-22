@@ -18,7 +18,7 @@ async function getSteamInfo() {
       `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${api_key}&steamid=${steam_id}&format=json`,
       axiosConfig
     );
-    result.recent_played_game = res.data.response.total_count == 1 ? res.data.response.games[0].name : "";
+    result.recent_played_game = res.data.response.total_count >0 ? res.data.response.games[0].name : "";
     res = await axios.get(
       `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${api_key}&steamids=${steam_id}`,
       axiosConfig
