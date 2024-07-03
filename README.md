@@ -47,7 +47,7 @@ _✨ 在 README 中展示网站数据，也可用于网站状态监控 ✨_
 - [x] 牛客
 - [x] CSDN
 - [x] GitHub
-- [ ] Steam
+- [x] Steam
 - [ ] 网易云音乐
 - [x] Codeforces
 - [x] 自定义网站监控
@@ -130,6 +130,10 @@ CSDN：`https://stats.justsong.cn/api/csdn?id=vczh`
 牛客：`https://stats.justsong.cn/api/nowcoder?id=6484283`
 
 ![牛客数据](https://stats.justsong.cn/api/nowcoder?id=6484283)
+
+Steam: `https://stats.justsong.cn/api/steam`
+
+![Steam数据](https://stats.justsong.cn/api/steam)
 
 ## 部署
 
