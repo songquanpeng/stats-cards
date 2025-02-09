@@ -10,7 +10,7 @@ async function getLeetCodeCnInfo(username) {
     acceptance: '0%',
     star_rating: 0
   };
-  
+
   let headers = {};
   
   try {
@@ -43,28 +43,30 @@ async function getLeetCodeCnInfo(username) {
           }
         }
       `,
-      variables: { userSlug: `${username}` },
+      variables: { userSlug: username },
       operationName: 'userSessionProgress'
     };
 
     let response = await axios.post('https://leetcode.cn/graphql', queryData, { headers });
+    const data = response.data.data;
 
-    const submitStats = response.data.data.userProfileUserQuestionSubmitStats;
-    const progressStats = response.data.data.userProfileUserQuestionProgress;
+    if (!data || !data.userProfileUserQuestionSubmitStats || !data.userProfileUserQuestionProgress) {
+      throw new Error('Invalid API response');
+    }
 
-    result.easy_solved = progressStats.numAcceptedQuestions.find(item => item.difficulty === 'EASY').count;
-    result.medium_solved = progressStats.numAcceptedQuestions.find(item => item.difficulty === 'MEDIUM').count;
-    result.hard_solved = progressStats.numAcceptedQuestions.find(item => item.difficulty === 'HARD').count;
+    const submitStats = data.userProfileUserQuestionSubmitStats;
+    const acSubmissions = submitStats.acSubmissionNum || [];
+    result.easy_solved = acSubmissions.find(item => item.difficulty === 'EASY') ? acSubmissions.find(item => item.difficulty === 'EASY').count : 0;
+    result.medium_solved = acSubmissions.find(item => item.difficulty === 'MEDIUM') ? acSubmissions.find(item => item.difficulty === 'MEDIUM').count : 0;
+    result.hard_solved = acSubmissions.find(item => item.difficulty === 'HARD') ? acSubmissions.find(item => item.difficulty === 'HARD').count : 0;
     result.total_solved = result.easy_solved + result.medium_solved + result.hard_solved;
 
-    let totalSubmitNum = submitStats.totalSubmissionNum.reduce((acc, item) => acc + item.count, 0);
-    let acceptSubmitNum = submitStats.acSubmissionNum.reduce((acc, item) => acc + item.count, 0);
-    
-    result.acceptance = ((acceptSubmitNum / totalSubmitNum) * 100).toFixed(1) + '%';
-    result.star_rating = 0;
+    const totalSubmissions = (submitStats.totalSubmissionNum || []).reduce((acc, item) => acc + item.count, 0);
+    result.acceptance = totalSubmissions > 0 ? ((result.total_solved / totalSubmissions) * 100).toFixed(1) + '%' : '0%';
   } catch (e) {
-    console.error(e.message);
+    console.error('Error fetching data:', e.message);
   }
+  
   return result;
 }
 
